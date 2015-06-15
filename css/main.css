@@ -1,0 +1,26 @@
+body {
+	padding-top: 100px;
+}
+
+.iconknow i{
+	padding: 5pt;
+	font-size: 12rem;
+}
+
+#adgologo {
+	padding-top: 10px;
+}
+
+#dgologo {
+	width: 60px;
+	height: 60px;
+}
+
+#describe {
+	height: 480px;
+}
+
+#tosports{
+	display: inline-block;
+	padding: 0 2px;
+}
