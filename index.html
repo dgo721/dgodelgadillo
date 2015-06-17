@@ -59,7 +59,7 @@
 		          <div id="describe" class="jumbotron">
 			        <h2>Hello there!</h2>
 			        <p>My name is Diego Delgadillo and I'm a Software/Web Developer, born in Monterrey, N.L. I'm always eager to know the latest in tech, sports, movies, series, video games and other random stuff you might consider or not.</p>
-			        <p>Professionally, I have worked with web portals/web applications at the Front-End level, though, I usually do a little more digging with databases as well.</p>
+			        <p>Professionally, I have worked with web portals/web applications at the Front-End level, though, I usually do a little more digging with applications, databases and servers as well.</p>
 			      </div>
 		        </div>
 		    </div>
@@ -206,5 +206,21 @@
 
     	<script src="js/vendor/jquery.min.js"></script>
     	<script src="js/flat-ui.min.js"></script>
+    	<script type="text/javascript">
+    		$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html, body').animate({
+			          scrollTop: target.offset().top
+			        }, 500);
+			        return false;
+			      }
+			    }
+			  });
+			});
+    	</script>
     </body>
 </html>
