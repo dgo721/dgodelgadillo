@@ -14,7 +14,7 @@
 
 	    <!-- Loading Flat UI -->
 	    <link href="css/flat-ui.min.css" rel="stylesheet">
-		
+
 		<!-- Loading Devicon -->
 	    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
 
@@ -48,7 +48,7 @@
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </nav>
-        
+
         <section id="about" class="container">
         	<div class="row">
 		        <div class="col-xs-12 col-md-4">
@@ -162,7 +162,7 @@
 		                <img src="img/poundingtherock.png" alt="..." class="tile-image tile-sports">
 		                <h6 class="tile-title"><a href="http://www.poundingtherock.com/" target="_blank">Pounding The Rock</a></h6>
 		             </div>
-				</div>				
+				</div>
 			</div>
         </section>
         <br/>
@@ -209,7 +209,14 @@
     	<script src="js/flat-ui.min.js"></script>
     	<script type="text/javascript">
     		$(function() {
-			  $('a[href*=#]:not([href=#])').click(function() {
+              $('.navbar.navbar-default .navbar-header .navbar-brand').click(function() {
+                  $('html, body').animate({
+                    scrollTop: 0
+                  }, 500);
+                  return false;
+              });
+
+              $('a[href*=#]:not([href=#])').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			      var target = $(this.hash);
 			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
