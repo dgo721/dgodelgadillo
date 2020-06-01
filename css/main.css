@@ -2,20 +2,6 @@ body {
 	padding-top: 100px;
 }
 
-.iconknow i{
-	padding: 5pt;
-	font-size: 12rem;
-}
-
-.tile-sports{
-	width: 200px;
-	height: 160px;
-}
-
-.list-social {
-	padding: 0 30px;
-}
-
 #adgologo {
 	padding-top: 10px;
 }
@@ -25,11 +11,37 @@ body {
 	height: 60px;
 }
 
-#tosports{
-	display: inline-block;
-	padding: 0 2px;
+.thumbnail {
+	max-width: 360px;
+	margin: 0 auto;
+	margin-bottom: 60px;
 }
 
-#resume-list {
-	margin: 0px;
+.list-social {
+	padding: 0 30px;
+}
+
+@media only screen and (min-width: 992px) {
+	.thumbnail {
+		margin-bottom: 0;
+	}
+
+	.jumbotron {
+		margin: 0;
+	}
+
+	#about {
+		margin-bottom: 60px;
+	}
+
+	#about > .row {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.jumbotron {
+		min-height: 476px;
+	}
 }
